@@ -2,10 +2,12 @@ extends layout
 
 block content
     .container
-        h1 Yesha Patel
-        p That's me
+        h1= name        
         ul
-            li I am #{age}
+            li I am #{age} years old
             li I was born in #{birthPlace}
             li I love #{interests} 
+            if relation
+                li I am Yesha's #{relation}
+
         
