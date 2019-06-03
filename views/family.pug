@@ -3,11 +3,8 @@ extends layout
 block content
     .container
         h1= name        
-        ul
-            li I am #{age} years old
-            li I was born in #{birthPlace}
-            li I love #{interests} 
+        p I am #{age} years old. I was born in #{birthPlace} in the year #{birthYear}. I love #{interests}.
             if relation
-                li I am Yesha's #{relation}
+               p I am Yesha's #{relation}.
 
         

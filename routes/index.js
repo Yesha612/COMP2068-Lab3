@@ -12,6 +12,7 @@ const members = [
     name: 'Yesha Patel',
     age: 19,
     birthPlace: 'Anand',
+    birthYear: 1999,
     interests: 'Reading novels'
 }, 
 {
@@ -19,6 +20,7 @@ const members = [
     name: 'Deep Patel',
     age: 15,
     birthPlace: 'Amod',
+    birthYear: 2003,
     interests: 'Sports',
     relation: 'brother'
 }, 
@@ -27,6 +29,7 @@ const members = [
     name: 'Ronak Patel',
     age: 45,
     birthPlace: 'Ranoli',
+    birthYear: 1974,
     interests: 'Accounts',
     relation: 'father'
 },  
@@ -35,6 +38,7 @@ const members = [
     name: 'Priti Patel',
     age: 42,
     birthPlace: 'Vadod',
+    birthYear: 1977,
     interests: 'Religious activities',
     relation: 'mother'
 }
