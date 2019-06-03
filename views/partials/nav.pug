@@ -1,4 +1,13 @@
-a(href="/yesha") Yesha
-a(href="/deep") Deep
-a(href="/ronak") Ronak
-a(href="/priti") Priti
+mixin NavItem(name)
+  li.nav-item
+    a.nav-link(href=`/${name.toLowerCase()}`)= name
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') Family
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      - var names = ['Yesha', 'Deep', 'Ronak', 'Priti']
+      for name in names
+       +NavItem(name)
